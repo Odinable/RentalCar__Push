@@ -36,3 +36,18 @@ export interface CarProps {
     limit: number,
     model: string,
   }
+
+export interface OptionProps {
+    title: string;
+    value: string;
+}
+
+  export interface CustomFilterProps {
+    title: string;
+    options: OptionProps[]
+  }
+
+  export interface ShowMoreProps {
+    pagenumber: number;
+    isNext: boolean;
+  }
